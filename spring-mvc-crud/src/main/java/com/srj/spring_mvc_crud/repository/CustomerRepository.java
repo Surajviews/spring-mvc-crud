@@ -1,0 +1,17 @@
+package com.srj.spring_mvc_crud.repository;
+
+import java.util.List;
+
+import com.srj.spring_mvc_crud.model.Customer;
+
+public interface CustomerRepository {
+
+	void saveCustomer(Customer customer);
+
+	List<Customer> getCustomers();
+
+	Customer getCustomer(int theId);
+
+	void deleteCustomer(int theId);
+
+}
